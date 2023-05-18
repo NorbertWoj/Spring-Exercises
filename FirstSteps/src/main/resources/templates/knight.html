@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add knight</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}" />
+
+    <script th:src="@{/webjars/jquery/3.2.1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+</head>
+<body>
+<div class="container">
+    Aktualna data <p th:text="${timecomponent.time}"/>
+    Posiadane złoto <p th:text="${playerinformation.gold}"/>
+
+    <p th:text="${knight.name}"></p>
+    <p th:text="${knight.age}"></p>
+    <p th:text="${knight.level}"></p>
+</div>
+</body>
+</html>
