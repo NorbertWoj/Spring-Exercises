@@ -1,0 +1,51 @@
+
+INSERT INTO company_detail (residence, employee_number) VALUES ("Spain", 325000);
+SET @company_detail = LAST_INSERT_ID();
+INSERT INTO company (name, value, id_company_detail) VALUES ( "Banco Santander", 29000000, @company_detail);
+SET @company = LAST_INSERT_ID();
+INSERT INTO property(city,room_number, id_company) VALUES ("Barcelona", 45, @company);
+INSERT INTO property(city,room_number, id_company) VALUES ("Valencia", 25, @company);
+INSERT INTO property(city,room_number, id_company) VALUES ("Sevilla", 15, @company);
+
+INSERT INTO company_detail (residence, employee_number) VALUES ("Spain", 225000);
+SET @company_detail = LAST_INSERT_ID();
+INSERT INTO company (name, value, id_company_detail) VALUES ( "Iberdrola", 19000000, @company_detail);
+SET @company = LAST_INSERT_ID();
+INSERT INTO property(city,room_number, id_company) VALUES ("Valencia", 55, @company);
+INSERT INTO property(city,room_number, id_company) VALUES ("Sevilla", 25, @company);
+
+INSERT INTO company_detail (residence, employee_number) VALUES ("Switzerland", 467000);
+SET @company_detail = LAST_INSERT_ID();
+INSERT INTO company (name, value, id_company_detail) VALUES ( "Nestle", 59000000, @company_detail);
+SET @company = LAST_INSERT_ID();
+INSERT INTO property(city,room_number, id_company) VALUES ("Zurich", 22, @company);
+INSERT INTO property(city,room_number, id_company) VALUES ("Geneva", 43, @company);
+INSERT INTO property(city,room_number, id_company) VALUES ("Bern", 13, @company);
+INSERT INTO property(city,room_number, id_company) VALUES ("Barcelona", 15, @company);
+
+INSERT INTO company_detail (residence, employee_number) VALUES ("Switzerland", 62000);
+SET @company_detail = LAST_INSERT_ID();
+INSERT INTO company (name, value, id_company_detail) VALUES ( "Novartis", 5700000, @company_detail);
+SET @company = LAST_INSERT_ID();
+INSERT INTO property(city,room_number, id_company) VALUES ("Zurich", 12, @company);
+INSERT INTO property(city,room_number, id_company) VALUES ("Bern", 53, @company);
+
+INSERT INTO company_detail (residence, employee_number) VALUES ("France", 212000);
+SET @company_detail = LAST_INSERT_ID();
+INSERT INTO company (name, value, id_company_detail) VALUES ( "Airbus", 7400000, @company_detail);
+SET @company = LAST_INSERT_ID();
+INSERT INTO property(city,room_number, id_company) VALUES ("Paris", 52, @company);
+INSERT INTO property(city,room_number, id_company) VALUES ("Lyon", 23, @company);
+INSERT INTO property(city,room_number, id_company) VALUES ("Bern", 53, @company);
+INSERT INTO property(city,room_number, id_company) VALUES ("Barcelona", 25, @company);
+INSERT INTO property(city,room_number, id_company) VALUES ("Zurich", 15, @company);
+
+INSERT INTO company_detail (residence, employee_number) VALUES ("France", 212000);
+SET @company_detail = LAST_INSERT_ID();
+INSERT INTO company (name, value, id_company_detail) VALUES ( "Peugeot", 7300000, @company_detail);
+SET @company = LAST_INSERT_ID();
+INSERT INTO property(city,room_number, id_company) VALUES ("Paris", 50, @company);
+
+
+
+
